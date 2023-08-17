@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Dashboard - SB Admin</title>
+    <title>Dashboard- Admin</title>
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
     <link href="../view/css/styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="../view/css/table.css">
@@ -18,7 +18,7 @@
 <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <!-- Navbar Brand-->
-        <a class="navbar-brand ps-3" href="index.php">Start Bootstrap</a>
+        <a class="navbar-brand ps-3" href="index.php"></a>
         <!-- Sidebar Toggle-->
         <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i
                 class="fas fa-bars"></i></button>
@@ -54,8 +54,10 @@
                     <div class="nav">
                         <div class="sb-sidenav-menu-heading">Core</div>
                         <a class="nav-link" href="index.html">
-                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                            Dashboard
+                            <div class="sb-nav-link-icon">
+                            <a class="nav-link" href="index.php">Dashboard</a>
+                            </div>
+                            
                         </a>
 
                         <div class="sb-sidenav-menu-heading">Interface</div>
@@ -84,6 +86,8 @@
                                         <a class="nav-link" href="index.php?act=dskh">Quản lí tài khoản</a>
                                         <a class="nav-link" href="index.php?act=dsbl">Quản lí bình luận</a>
                                         <a class="nav-link" href="index.php?act=thongke">Thống kê</a>
+                                        <a class="nav-link" href="index.php?act=listbill">Danh Sách Đơn Hàng</a>
+                                        
 
                                     </nav>
                                 </div>

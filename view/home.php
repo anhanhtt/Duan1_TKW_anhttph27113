@@ -15,7 +15,7 @@
                     <img src="https://daotaonganhan.hcmute.edu.vn/wp-content/uploads/2017/02/nike-banner.png"
                       width="100%"  height=100%>
                     <div class="info sl2">
-                        <h4 id="h4_sl2">$NEAKER$ </h4>
+                        <h4 id="h4_sl2">SNEAKER </h4>
                         <p id="text2_sl2">Mang đến trải nghiệm sản phẩm tốt nhất</p>
                     </div>
                 </div>
@@ -23,7 +23,7 @@
                     <img src="https://file.hstatic.net/200000097517/collection/banner1_9287ef0eb8744148a4e775f2c79ba245.jpg"
                     width="90%" height=100%>
                     <div class="info sl3">
-                        <h4 id="h4_sl3">$NEAKER$</h4>
+                        <h4 id="h4_sl3">SNEAKER</h4>
                         <p id="text2_sl3">Mang đến trải nghiệm sản phẩm tốt nhất</p>
                     </div>
                 </div>
@@ -115,7 +115,7 @@
                 
                 <div class="card h-100">
                     
-                    <a href="' . $linksp . '"><img class="card-img-top" src="' . $hinh . '" style="width:100%" /></a>
+                    <a href="' . $linksp . '"><img class="card-img-top h-70" src="' . $hinh . '" style="width:300px height:300px" /></a>
                     <!-- Product details-->
                     <div class="card-body p-4">
                         <div class="text-center">

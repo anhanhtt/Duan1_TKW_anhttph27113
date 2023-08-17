@@ -1,6 +1,6 @@
-<?php 
+<?php
 include 'conect/conect.php';
-$user = (isset($_SESSION['user'])) ? $_SESSION['user']: [];
+$user = (isset($_SESSION['user'])) ? $_SESSION['user'] : [];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,7 +10,7 @@ $user = (isset($_SESSION['user'])) ? $_SESSION['user']: [];
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>$NEAKER$</title>
+    <title>SNEAKER</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Bootstrap icons-->
@@ -27,14 +27,14 @@ $user = (isset($_SESSION['user'])) ? $_SESSION['user']: [];
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container px-4 px-lg-5">
             <a class="navbar-brand" href="index.php"><strong>
-                    <span>$</span>
+                    <span>S</span>
                     <span>N</span>
                     <span>E</span>
                     <span>A</span>
                     <span>K</span>
                     <span>E</span>
                     <span>R</span>
-                    <span>$</span>
+
 
                 </strong></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -77,11 +77,7 @@ $user = (isset($_SESSION['user'])) ? $_SESSION['user']: [];
                         <input class="xyz px-4" type="submit" name="timkiem" value="Tìm Kiếm ">
 
                     </form>
-                    <button class="btn btn-outline-dark px-4" type="submit">
-                        <i class="bi-cart-fill me-1"></i>
-                        Cart
-                        <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
-                    </button>
+
                     <button class="btn btn-outline-dark px-4 nav-item dropdown" type="submit">
                         <i class="fas fa-user nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false"></i>
@@ -91,7 +87,7 @@ $user = (isset($_SESSION['user'])) ? $_SESSION['user']: [];
                                 extract($_SESSION['user']);
                                 ?>
                                 <div class="row mb10 dropdown-item">
-                                    Xin chào:  <br>
+                                    Xin chào: <br>
                                     <?= $username ?>
                                 </div>
                                 <div class="row mb10">
@@ -105,8 +101,18 @@ $user = (isset($_SESSION['user'])) ? $_SESSION['user']: [];
                                     if ($role == 1) {
                                         ?>
                                         <li>
-                                            <a class="dropdown-item" href="admin/index.php"> Đăng nhập Admin</a>
+                                            <a class="dropdown-item" href="admin/index.php"> Vào trang Admin</a>
                                         </li>
+                                        <?php
+                                    } else {
+                                        ?>
+                                       
+                                            <a class="btn btn-outline-dark  dropdown-item" type="submit">
+                                                <i class="bi-cart-fill me-1"></i>
+                                                Cart
+                                                <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                                            </a>
+                                       
                                         <?php
                                     }
                                     ?>

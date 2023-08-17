@@ -1,6 +1,3 @@
-<!-- Product section-->
-
-
 <div class="container px-4 px-lg-5 my-5">
   <?php
   extract($onesp);
@@ -23,13 +20,31 @@
                             style="max-width: 3rem" />
                         <button class="btn btn-outline-dark flex-shrink-0" type="button">
                             <i class="bi-cart-fill me-1"></i>
-                            Add to cart
+                            <form class="form_add" action="index.php?act=addtocart" method="post">
+                              <input type="hidden" name="product_ID" value="' . $product_ID . '">
+                              <input type="hidden" name=""product_name" value="' . $product_name . '">
+                              <input type="hidden" name="image" value="' . $image . '">
+                              <input type="hidden" name="price" value="' . $price . '">
+                              <input type="submit"  name="addtocart" value="Add to cart">
+                            </form>
                         </button>
                     </div>
                 </div>';
     ?>
-
-
+  </div>
+<div class="mt-5 card">
+  <h4 class="m-4">Bình luận </h4>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#binhluan").load("view/binhluan/binhluanform.php", {idpro: <?=$product_ID?>});
+    });
+    </script> 
+  </div>
+  <div class="row" id="binhluan">
+                    
+  </div>
+<div>
     <!-- Related items section-->
     <section class="py-5 bg-light">
       <div class="container px-4 px-lg-5 mt-5">
@@ -73,11 +88,10 @@
           
 
         </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-          <script>
-            $(document).ready(function () {
-              $("#binhluan").load("view/binhluan/binhluanform.php", { idpro: <?= $product_ID ?> });
-            });
-          </script>
+        
       </div>
+
+     
+      
+      
     </section>
